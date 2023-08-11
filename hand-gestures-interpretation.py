@@ -119,13 +119,13 @@ def recognize_motion(contours, roi):
         # Apply cosine rule here
         angle = math.acos((b**2 + c**2 - a**2) / (2 * b * c)) * 57
 
-        # Ignore angles > 90 and highlight rest with red dots
+        # Ignore angles > 90 and highlight rest with blue dots
         if angle <= 90:
             motion_label += 1
-            cv2.circle(roi, far, 3, [0,0,255], -1)
+            cv2.circle(roi, far, 3, [255,0,0], -1)
 
         # Draw green lines around hand
-        cv2.line(roi,start, end, [0,255,0], 2)      # roi = region of interest
+        cv2.line(roi,start, end, [0,255,0], 2)
 
     motion_label += 1
 
