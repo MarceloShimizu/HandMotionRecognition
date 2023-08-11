@@ -1,3 +1,14 @@
+# -----------------------------------------------------------------------------
+# File: hand_gesture_interpretation.py
+# Author: Marcelo Shimizu
+# Description: Real-time hand gesture detection and recognition system.
+# Version: 1.0
+# Date: 2023-08-10
+# -----------------------------------------------------------------------------
+# Version History:
+#   1.0 - Initial release (2023-08-10)
+# -----------------------------------------------------------------------------
+
 import os               # OS library is used to open the software
 import cv2              # OpenCV library is used to open the camera
 import numpy as np      # Numpy and Math library is used to make the calculations
