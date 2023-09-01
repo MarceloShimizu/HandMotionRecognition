@@ -134,7 +134,7 @@ def recognize_motion(contours, roi):
 def main():
     
     # Open the camera
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
 
     x1, y1, x2, y2 = ROI_COORDINATES
 
